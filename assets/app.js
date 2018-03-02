@@ -22,7 +22,7 @@ $("#add-train-btn").on("click", function(event) {
   var firstTrain = moment($("#first-train-input").val().trim(), "HH:mm");
   var frequency = $("#frequency-input").val().trim();
 
-  // Uploads employee data to the database
+  // Uploads train data to the database
   database.ref().push({
     name: trainName,
     destination: trainDestination,
